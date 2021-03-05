@@ -1,0 +1,77 @@
+.container {
+  background-color: #100e0e;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sendingContent {
+  margin: 0 auto;
+  padding-top: 150px;
+  width: 100vw;
+  text-align: center;
+
+  color: whitesmoke;
+}
+
+.mainButton {
+  justify-content: center;
+
+  h3 {
+    margin: 0 auto;
+    width: 350px;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: -3px 0px 9px 0px #e10efa, -1px 0px 6px 0px #a53ea1, 1px 0px 3px 0px #6543b7, 3px 0px 12px 0px #0568fa;
+    background: linear-gradient(90deg, #ce02ff 45%, #ae3cc4 30%, #1c72ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #111010;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+  }
+
+}
+
+
+
+
+//footer
+
+footer {
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+
+
+}
+
+.footerContent{
+  display: flex;
+  color: whitesmoke;
+  font-size: 1.5em;
+  justify-content: space-between;
+
+  .numberContent{
+      display: block;
+    text-align: center;
+    padding-left: 30px;
+    background: linear-gradient(90deg, #ce02ff 45%, #ae3cc4 30%, #1c72ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #111010;
+  }
+
+  .socImg{
+    padding-right: 30px;
+
+    img{
+      margin-right:30px;
+
+    }
+  }
+}
+

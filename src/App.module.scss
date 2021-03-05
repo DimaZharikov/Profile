@@ -1,0 +1,25 @@
+
+
+:root{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+
+.navBar{
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  color: #fff;
+  z-index: 100;
+  }
+
