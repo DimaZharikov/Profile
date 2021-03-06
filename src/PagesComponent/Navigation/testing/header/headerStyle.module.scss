@@ -1,0 +1,53 @@
+
+.Header{
+  width: 100%;
+  background: black;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+
+  .Navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    ul{
+      display: flex;
+      list-style: none;
+      z-index: 20;
+      :nth-child(4){
+        margin-right: 50px;
+      }
+      li{
+        margin-right: 10px;
+        :hover{
+          opacity: .7;
+        }
+        .active {
+          font-weight: bold;
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: 300;
+
+
+        }
+      }
+    }
+  }
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+}
+
+
+@media (min-width: 360px) and (max-width: 600px){
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

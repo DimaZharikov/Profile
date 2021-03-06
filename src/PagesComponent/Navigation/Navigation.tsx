@@ -10,17 +10,23 @@ const Navigation = () => {
     const [isOpen, setIsOpen] = useState <boolean>(true)
 
     const onShowMenu = () => {setIsOpen(!isOpen)}
+
+    const mappedNavigationData =  NavigationData.map ((item, index) => {
+        return (<div  className={style.content} key = {index}>
+            <NavLink to = {item.path} className = {style.link}>
+                {item.title}
+            </NavLink>
+        </div>)
+    })
+
     return (<div>
-        <button onClick={onShowMenu}>open</button>
+        {
+            !isOpen &&  <button onClick={onShowMenu} >open</button>
+        }
+
         <div className={style.MenuToggle}>
             {
-                isOpen && NavigationData.map ((item) => {
-                    return (<div  className={style.content}>
-                        <NavLink to = {item.path} className = {style.link}>
-                            {item.title}
-                        </NavLink>
-                    </div>)
-                })
+                isOpen && mappedNavigationData
             }
         </div>
 
