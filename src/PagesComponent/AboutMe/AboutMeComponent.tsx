@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import HeadersComponent from "../../layOutComponent/headers/HeadersComponent";
 import style from "./AboutMe.module.scss"
 import TitleComponent from "../../layOutComponent/Title/TitleComponent";
@@ -9,6 +9,11 @@ import ExpComponent from "./ExpComponent";
 
 
 const AboutMeComponent: FC = () => {
+
+    useEffect (()=>{
+        document.title = "About Me"
+    })
+
     return (
         <div className={style.container} >
             <HeadersComponent label={'About Me'}/>

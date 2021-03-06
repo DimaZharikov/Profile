@@ -3,6 +3,9 @@ import style from "./AboutMe.module.scss"
 import BookIcon from '@material-ui/icons/Book';
 
 const EducationComponent: FC = () => {
+
+
+
     return (
         <div className={style.Experience}>
             <div className={style.resume_content}>

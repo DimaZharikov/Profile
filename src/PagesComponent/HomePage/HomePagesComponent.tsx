@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import style from './Homestyle.module.scss'
 import mainPhoto from "./../../immages/1.jpg"
 import SplitText from "./SpliteText";
@@ -9,6 +9,11 @@ import wall from './../../immages/pexels-christina-morillo-1181271.jpg'
 
 const HomePageComponent : FC  =() => {
 
+
+
+    useEffect (() => {
+        document.title = 'HOME'
+    })
     return (<div className = {style.container} style = {{
         backgroundImage: `url(${wall})`,
         backgroundPosition: "center",

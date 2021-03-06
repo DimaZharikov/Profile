@@ -10,9 +10,13 @@ const SocialComponent: FC = () => {
         <div className={style.numberContent}>
             <div>
                 <img src="https://img.icons8.com/nolan/50/apple-phone.png" alt='phone'/>
-                <img src="https://img.icons8.com/nolan/50/viber.png" alt="viber"/>
-                <img src="https://img.icons8.com/nolan/50/telegram-app.png" alt='telegram'/>
+                <a href="viber://chat?number=%2B375297454830">
+                    <img src="https://img.icons8.com/nolan/50/viber.png" alt="viber"/>
+                </a>
 
+                <a href="https://t.me/DimaZharikov">
+                    <img src="https://img.icons8.com/nolan/50/telegram-app.png" alt='telegram'/>
+                </a>
             </div>
             <div>
                 <p>+375(29) 745-48-30</p>

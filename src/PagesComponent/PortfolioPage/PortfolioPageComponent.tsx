@@ -1,4 +1,4 @@
-import {FC} from "react";
+import {FC, useEffect} from "react";
 import HeadersComponent from "../../layOutComponent/headers/HeadersComponent";
 import style from "./folioStyle.module.scss"
 import BlockOfProject from "./BlocksOfProject";
@@ -7,6 +7,11 @@ import SimpleAccordion from "../../layOutComponent/accordion/Acordion";
 
 
 const PortfolioPageComponent: FC = () => {
+
+    useEffect (()=> {
+        document.title = "Portfolio"
+    })
+
     return (<div className={style.container}>
 
         <HeadersComponent label={"Portfolio"}/>
